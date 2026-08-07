@@ -1340,18 +1340,21 @@
   </div>
 
   <!-- BANDEAU DE CONFIDENTIALITÉ & COOKIES -->
-  <div id="cookie-banner" class="fixed bottom-4 right-4 left-4 sm:left-auto sm:max-w-md z-40 p-4 rounded-2xl bg-brand-darkBlue/95 border border-slate-700/80 shadow-2xl text-xs text-slate-300 backdrop-blur-lg transition-all duration-300 hidden">
-    <div class="flex items-start gap-3">
-      <div class="p-2 bg-brand-teal/10 rounded-xl text-brand-cyan shrink-0">
-        <i class="fa-solid fa-shield-halved text-lg"></i>
+  <div id="cookie-banner" class="fixed bottom-3 inset-x-3 sm:bottom-4 sm:left-auto sm:right-4 sm:max-w-sm z-50 p-3.5 sm:p-4 rounded-2xl bg-brand-darkBlue/95 border border-slate-700/80 shadow-2xl text-xs text-slate-300 backdrop-blur-lg transition-all duration-300 hidden">
+    <div class="flex flex-col sm:flex-row items-start gap-2.5 sm:gap-3">
+      <div class="flex items-center gap-2.5 sm:block">
+        <div class="p-1.5 sm:p-2 bg-brand-teal/10 rounded-xl text-brand-cyan shrink-0">
+          <i class="fa-solid fa-shield-halved text-base sm:text-lg"></i>
+        </div>
+        <div class="font-bold text-white text-xs sm:hidden">Respect de votre vie privée</div>
       </div>
-      <div class="space-y-2">
-        <div class="font-bold text-white text-xs">Respect de votre vie privée</div>
+      <div class="space-y-1.5 sm:space-y-2 flex-1 w-full">
+        <div class="font-bold text-white text-xs hidden sm:block">Respect de votre vie privée</div>
         <p class="text-[11px] text-slate-400 leading-snug">
-          Carbon Conseil n'utilise aucun cookie publicitaire ni traceur tiers. En poursuivant votre navigation, vous acceptez notre <button onclick="toggleModal('privacy-modal')" class="text-brand-cyan underline">politique de confidentialité</button>.
+          Carbon Conseil n'utilise aucun cookie publicitaire ni traceur tiers. En poursuivant votre navigation, vous acceptez notre <button type="button" onclick="toggleModal('privacy-modal')" class="text-brand-cyan underline">politique de confidentialité</button>.
         </p>
-        <div class="pt-1 flex items-center justify-end gap-2">
-          <button onclick="acceptCookies()" class="px-3 py-1.5 rounded-lg bg-gradient-to-r from-brand-teal to-brand-cyan text-brand-navy font-bold text-[11px]">
+        <div class="pt-1 flex items-center justify-end w-full">
+          <button type="button" onclick="acceptCookies()" class="w-full sm:w-auto px-4 py-2 sm:py-1.5 rounded-lg bg-gradient-to-r from-brand-teal to-brand-cyan text-brand-navy font-bold text-xs sm:text-[11px] text-center shadow hover:brightness-110 transition-all">
             J'ai compris
           </button>
         </div>
