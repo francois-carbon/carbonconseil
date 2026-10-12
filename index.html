@@ -397,21 +397,25 @@
         <div class="mt-10 grid md:grid-cols-3 gap-8">
           <figure class="border-l-2 border-corail pl-6 flex flex-col">
             <blockquote class="font-serif italic text-xl leading-snug text-encre/90">« Un grand professionnel qui garantit un accompagnement hors norme sur la stratégie et la vision d'une entreprise. François est proche des équipes et arrive très facilement à être facilitateur dans le changement. »</blockquote>
-            <figcaption class="mt-5 text-sm">
+            <figcaption class="mt-5 text-sm grid grid-cols-[3rem_1fr] gap-x-3 items-center">
+              <!-- Portrait : initiales affichées tant que la photo n'est pas fournie -->
+              <span class="row-span-2 w-12 h-12 rounded-full overflow-hidden bg-roi text-ivoire font-titre font-semibold flex items-center justify-center" aria-hidden="true"><img src="temoin-philippe-sandjivy.jpg" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.replaceWith('PS')"></span>
               <span class="font-titre font-semibold block">Philippe Sandjivy</span>
               <span class="text-encre/70">CEO, Finopia</span>
             </figcaption>
           </figure>
           <figure class="border-l-2 border-corail pl-6 flex flex-col">
             <blockquote class="font-serif italic text-xl leading-snug text-encre/90">« Il a animé des ateliers avec deux groupes de cinq collaborateurs, permettant de faire émerger de nouvelles idées grâce à des méthodes d'intelligence collective. […] François a su créer un environnement propice à l'innovation et à la coopération. »</blockquote>
-            <figcaption class="mt-5 text-sm">
+            <figcaption class="mt-5 text-sm grid grid-cols-[3rem_1fr] gap-x-3 items-center">
+              <span class="row-span-2 w-12 h-12 rounded-full overflow-hidden bg-roi text-ivoire font-titre font-semibold flex items-center justify-center" aria-hidden="true"><img src="temoin-loic-brien.jpg" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.replaceWith('LB')"></span>
               <span class="font-titre font-semibold block">Loïc Brien</span>
               <span class="text-encre/70">Directeur général adjoint, ANSET Assurances</span>
             </figcaption>
           </figure>
           <figure class="border-l-2 border-corail pl-6 flex flex-col">
             <blockquote class="font-serif italic text-xl leading-snug text-encre/90">« Très belle intervention de François qui a su comprendre la problématique, reformuler mon besoin et me proposer une approche à la fois pragmatique et technologique avec son expertise IA + formation. »</blockquote>
-            <figcaption class="mt-5 text-sm">
+            <figcaption class="mt-5 text-sm grid grid-cols-[3rem_1fr] gap-x-3 items-center">
+              <span class="row-span-2 w-12 h-12 rounded-full overflow-hidden bg-roi text-ivoire font-titre font-semibold flex items-center justify-center" aria-hidden="true"><img src="temoin-olivier-vitry.jpg" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.replaceWith('OV')"></span>
               <span class="font-titre font-semibold block">Olivier Vitry</span>
               <span class="text-encre/70">Chef d'entreprise, Tamarins Services</span>
             </figcaption>
@@ -728,17 +732,20 @@
 
     // Mur de logos : [fichier, nom affiché si l'image est absente]
     const LOGOS = [
-      ['apm.jpg', 'APM'], ['armeflhor.jpg', 'Armeflhor'], ['le-clan.png', 'Le Clan'], ['EXCO.jpg', 'EXCO Cogefi'],
-      ['solla.png', 'Solla'], ['finopia.png', 'Finopia'], ['reunion-apprentissage.png', 'Réunion Apprentissage'],
-      ['anset-assurances.png', 'AnSet Assurances'], ['tetranergy.png', 'Tetranergy'], ['emergence-oi.jpg', 'Émergence O.I.'],
-      ['france-active-reunion.png', 'France Active Réunion'], ['ccir.png', 'CCI Réunion'], ['bamirex.png', 'Bamirex'],
-      ['foucque.png', 'Groupe Foucque'], ['standup-formation.png', 'Stand Up Formation'], ['opening-formation.png', 'Opening Formation'],
-      ['atria-formation.png', 'Atria Formation'], ['cjd-reunion.png', 'CJD Réunion'], ['france-travail.png', 'France Travail'],
-      ['iforma.png', 'Iforma'], ['Igloo-LGM.png', "L'Igloo LGM"], ['irb.png', 'IRB Biomimétisme'], ['newcorp.png', 'Newcorp Conseil'],
-      ['agissez-maintenant.png', 'AJC Maintenant'], ['Mascareigne-BTP.png', 'Mascareigne BTP'], ['Get-974.png', 'Get 974'],
-      ['Eclosions.png', 'Eclosions'], ['Elfie-Social-Lab.png', 'Elfie Social Lab'], ['Afnor-Réunion.png', 'Afnor Réunion'],
-      ['SAAB.png', 'SA Adrien Bellier'], ['Leexi.png', 'Leexi'], ['Tamarins-services.png', 'Tamarins services'],
-      ['Alliance bureautique.png', 'Alliance bureautique'], ['Apprendre autrement.png', 'Apprendre autrement']
+      ['apm.png', 'APM'], ['armeflhor.jpg', 'Armeflhor'], ['le-clan.png', 'Le Clan'], ['exco.jpg', 'EXCO Cogefi'],
+      ['solla.png', 'Solla'], ['finopia.png', 'Finopia'], ['reunion-apprentissage.jpg', 'Réunion Apprentissage'],
+      ['anset-assurances.png', 'AnSet Assurances'], ['tetranergy.jpg', 'Tetranergy'], ['emergence-oi.jpg', 'Émergence O.I.'],
+      ['france-active-reunion.png', 'France Active Réunion'], ['ccir.png', 'CCI Réunion'], ['bamirex.jpg', 'Bamirex'],
+      ['foucque.jpg', 'Groupe Foucque'], ['standup-formation.png', 'Stand Up Formation'], ['opening-formation.png', 'Opening Formation'],
+      ['atria-formation.png', 'Atria Formation'], ['cjd-reunion.png', 'CJD Réunion'], ['france-travail.jpg', 'France Travail'],
+      ['iforma.png', 'Iforma'], ['igloo.png', "L'Igloo"], ['lgm.png', 'LGM'], ['irb.jpg', 'IRB Biomimétisme'], ['newcorp.png', 'Newcorp Conseil'],
+      ['ajc.png', 'AJC Maintenant'], ['get-974.png', 'Get 974'], ['eclosions.png', 'Eclosions'], ['elfie-social-lab.png', 'Elfie Social Lab'],
+      ['afnor.jpg', 'Afnor Réunion'], ['leexi.png', 'Leexi'], ['tamarins-services.png', 'Tamarins services'],
+      ['alliance-bureautique.png', 'Alliance bureautique'], ['apprendre-autrement.jpg', 'Apprendre autrement'],
+      ['biomimexpo.png', "Biomim'expo"], ['formslife.jpg', 'Formslife'], ['the-green-house.png', 'The Green House'], ['ifag.png', 'IFAG'],
+      ['technopole.png', 'Technopole'], ['geraldine-b.jpg', 'Géraldine B.'],
+      // Logos absents du dossier de dépôt : affichés en texte si le fichier n'existe pas sur le serveur
+      ['Mascareigne-BTP.png', 'Mascareigne BTP'], ['SAAB.png', 'SA Adrien Bellier']
     ];
     const logosGrid = document.getElementById('logos-grid');
     if (logosGrid) {
